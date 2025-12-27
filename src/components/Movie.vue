@@ -6,7 +6,7 @@
         <small class="movie-isbn">{{ movie?.isbn || "--" }}</small>
     </div>
     <div class="movie-actions">
-        <p>Edit</p>
+        <RouterLink :to="`/edit/${movie.id}`">Edit</RouterLink>
         <button @click="deleteMovie" class="delete-button">Delete</button>
     </div>
 </template>
