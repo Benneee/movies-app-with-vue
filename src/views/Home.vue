@@ -18,7 +18,10 @@
         </div>
 
         <div v-if="!isLoading && movies" class="footnote">
-            <p>Add a new movie to the list here</p>
+            <p>
+                Add a new movie to the list
+                <RouterLink class="link-to-new" to="/new">here</RouterLink>
+            </p>
         </div>
     </div>
 
@@ -103,6 +106,10 @@ const deleteMovie = async () => {
 </script>
 
 <style scoped>
+.link-to-new {
+    color: darkblue;
+    text-decoration: underline;
+}
 .movie {
     display: flex;
     justify-content: space-between;
