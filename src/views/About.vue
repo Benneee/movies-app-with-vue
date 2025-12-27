@@ -6,10 +6,9 @@
             it. We will be making an API request to handle the following:
         </p>
         <ul>
-            <li>Create a movie</li>
-            <li>Get a list of movies</li>
+            <li>Create a movie <RouterLink to="/new">here</RouterLink></li>
+            <li>Get a list of movies <RouterLink to="/">here</RouterLink></li>
             <li>Shows the details of a movie</li>
-            <li>Highlight a movie's directory</li>
         </ul>
     </div>
 </template>
