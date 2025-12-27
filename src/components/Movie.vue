@@ -3,7 +3,7 @@
         <RouterLink :to="movie.id" class="movie-title">{{
             movie?.title
         }}</RouterLink>
-        <small class="movie-isbn">{{ movie?.isbn }}</small>
+        <small class="movie-isbn">{{ movie?.isbn || "--" }}</small>
     </div>
     <div class="movie-actions">
         <p>Edit</p>

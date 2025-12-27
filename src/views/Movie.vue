@@ -7,13 +7,13 @@
         </div>
         <div v-if="!isLoading && movieDetails">
             <p>
-                Movie title: <span>{{ movieDetails?.title }}</span>
+                Movie title: <span>{{ movieDetails?.title || "--" }}</span>
             </p>
             <p>
                 Movie Director: <span> {{ directorFullName }} </span>
             </p>
             <p>
-                Movie ISBN: <span>{{ movieDetails?.isbn }}</span>
+                Movie ISBN: <span>{{ movieDetails?.isbn || "--" }}</span>
             </p>
         </div>
         <div v-if="!isLoading && !movieDetails">
