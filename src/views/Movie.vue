@@ -3,7 +3,7 @@
         <Header />
         <h3>Movie details</h3>
         <div v-if="isLoading">
-            <p>Loading movie details...</p>
+            <Spinner />
         </div>
         <div v-if="!isLoading && movieDetails">
             <p>
@@ -25,6 +25,7 @@
 import { computed, onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
 import Header from "@/components/Header.vue";
+import Spinner from "@/components/Spinner.vue";
 import axios from "axios";
 
 const route = useRoute();
